@@ -34,7 +34,7 @@ if (keystorePropertiesFile.exists()) {
 
 android {
     compileSdkVersion 30
-    def versionBase = 123
+    def versionBase = 2
     flavorDimensions 'abi'
     compileSdkVersion 30
 
