@@ -60,7 +60,7 @@ class _CVIDEPageState extends State<CVIDEPage> {
     List<String> lines = code.split('\n');
     String lastLine = lines.elementAt(lines.length - 4);
 
-    if (lastLine.split(' ').elementAt(0).compareTo('outputImage') != 0) {
+    if (!lastLine.startsWith('outputImage')) {
       ToastUtils.showToastMessage(text: ConstUtils.cv_error_line2);
       return;
     }
