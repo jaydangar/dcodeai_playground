@@ -42,10 +42,6 @@ class _HomePageState extends State<HomePage> {
   void parseURI() {
     _uriLinkStream = getUriLinksStream();
     _linkSubscription = _uriLinkStream.listen((Uri uri) {
-      if (uri.pathSegments.isEmpty) {
-        return;
-      }
-
       currentIDEPage = PageDecider.returnPage(uri.pathSegments.last);
       setState(() {});
     }, onError: (e) {

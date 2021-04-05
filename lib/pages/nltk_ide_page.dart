@@ -226,7 +226,7 @@ class _NLTKIDEPageState extends State<NLTKIDEPage> {
                         padding: const EdgeInsets.all(8.0),
                         child: FlatButton(
                             height: 50,
-                            color: ColorsUtils.selected_chip_color,
+                            color: Theme.of(context).accentColor,
                             child: Text(
                               ConstUtils.run_code,
                               style: TextStyle(
